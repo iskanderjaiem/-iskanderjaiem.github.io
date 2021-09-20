@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta UTF8 charset -->
+  <meta charset="utf-8">
+
+  <!-- Viewport specification for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic page information -->
+  <meta name="author" content="Iskander Jaiem">
+  <meta name="description" content="Iskander Jaiem - Personal website">
+  <title>Iskander Jaiem</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="./img/apple-touch-icon-57-precomposed.png">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./js/html5shiv.js"></script>
+  <script src="./js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- CSS libraries and styles -->
+  <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./libs/animate.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/retina.css">
+  <link rel="stylesheet" href="./css/small.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/medium.css" media="screen and (min-width: 992px)">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <!-- LESS generated customizable styles -->
+  <link rel="stylesheet" href="./css/less.css">
+  <link rel="stylesheet" href="./css/less-small.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/colors/gold.css" id="preview-color">
+  <link rel="stylesheet" href="./css/fontStyle.css">
+  <!-- Ribbon -->
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/forkit.css">
+  <style>
+
+  .modal{
+    z-index: 999999;
+    padding-top:6em;
+  }
+
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+  .se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/loader-64x/Preloader_1.gif) center no-repeat #fff;
+  }
+  </style>
+
+  <!--Loader-->
+  <script src="./js/jquery152.min.js"></script>
+  <script>
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+  </script>
+</head>
+<body>
+  <div class="se-pre-con"></div>
+  <!-- Hero -->
+  <div id="hero" data-fixed-image="./assets/hero.jpg">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="content padding-top padding-tq-bottom text-center">
+        <div class="hero-heading uppercase" data-animate="bounceIn" data-group="1"><span>Iskander Jaiem</span></div>
+        <div class="hero-subheading uppercase" data-animate="flipInY" data-delay="300" data-group="1">INGÉNIEUR EN INFORMATIQUE</div>
+        <div class="hero-amp" data-animate="flipInY" data-delay="600" data-group="1">&amp;</div>
+        <div class="hero-handscript lowercase" data-animate="flipInY" data-delay="900" data-group="1">Freelancer</div>
+        <div class="cover-space hidden-sm hidden-xs"></div>
+      </div>
+    </div>
+    <div class="cover hidden-sm hidden-xs" data-animate="fadeInDown" data-delay="350">
+      <div class="one"></div>
+      <div class="two"></div>
+      <img src="./assets/cover.png" alt="" />
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" data-animate="fadeInDown">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#hero" class="navbar-brand" data-animate="fadeInDown" data-delay="300"><span>Iskander Jaiem</span></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#about-me"><span>À propos de moi<span class="tl"></span><span class="br"></span></span></a></li>
+          <li><a href="#cv"><span>Mon CV<span class="tl"></span><span class="br"></span></span></a></li>
+          <li>  <a href="#portfolio"><span>Portfolio<span class="tl"></span><span class="br"></span></span></a></li>
+          <li><a href="#contact"><span>Contact<span class="tl"></span><span class="br"></span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Who I am section -->
+  <section id="about-me" class="padding-bottom text-center">
+    <div class="section-heading" data-animate="bounceIn">À propos de moi</div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 padding-minus-bottom">
+        <p data-animate="flipInY" data-delay="300*index" data-group="1">
+          Je suis un ingénieur d'études et developpement en informatique. <br/><!-- à l’Ecole Sup Privée d'Ingénierie et de Technologies (ESPRIT).<br/>-->
+          J’ai toujours été passionné par l’informatique et plus généralement les nouvelles technologies. C’est donc tout naturellement que mon choix d’études s’est porté vers l’informatique..<br/>
+          Mon ambition est d'intervenir sur des projets d'envergure et à grande valeur ajoutée en corrélation avec l'informatique afin d'élargir mon spectre fonctionnel en découvrant de nouveaux domaines métiers.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 padding-minus-bottom">
+        <ul class="no-style">
+          <!-- <li data-animate="flipInY" data-delay="300*index" data-group="1"><strong>Birthdate:</strong> ??/??/????</li>-->
+          <li data-animate="flipInY" data-delay="300*index" data-group="1"><strong>Tel:</strong> +33 (0)6 73 28 30 50</li>
+          <li data-animate="flipInY" data-delay="300*index" data-group="1"><strong>E-mail:</strong> iskander.jaiem@gmail.com</li>
+          <!--<li data-animate="flipInY" data-delay="300*index" data-group="1"><strong>E-mail:</strong> iskanderjaiem@gmail.com</li>-->
+          <!-- <li data-animate="flipInY" data-delay="300*index" data-group="1"><strong>Address:</strong> N3 Rue Essarouel Khezema-est 4051 Sousse, Tunisia.</li>-->
+        </ul>
+        <a target="_blank" href="https://www.github.com/iskanderjaiem" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://www.upwork.com/freelancers/~01eeda076f45228638" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="icon-upwork"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/iskander-jaiem-2a83aab1" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.facebook.com/jaiemiskander" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-facebook"></i></a>
+        <!--   <a href="https://twitter.com/tony_bogdanov" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-pinterest"></i></a>
+        <a href="#" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-dribbble"></i></a>
+      --> </div>
+    </div>
+  </div>
+
+  <!-- My skills section -->
+  <section class="padding-bottom text-center">
+    <div class="section-heading" data-animate="bounceIn">Mes compétences</div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 padding-minus-bottom">
+        <div class="sub-heading" data-animate="fadeInRight" data-group="1">Compétences en informatique</div>
+        <label data-animate="fadeInRight" data-delay="900" data-group="1">Compétences en développement Logiciel</label>
+        <div class="skill-bar compact" data-value="85%" data-animate="fadeInRight" data-delay="1200" data-group="1">
+          <div class="bar">
+            <div class="fill">
+              <div class="value">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <label data-animate="fadeInRight" data-delay="900" data-group="1">Compétences en développement Web</label>
+        <div class="skill-bar compact" data-value="90%" data-animate="fadeInRight" data-delay="1200" data-group="1">
+          <div class="bar">
+            <div class="fill">
+              <div class="value">0%</div>
+            </div>
+          </div>
+        </div>
+        <label data-animate="fadeInRight" data-delay="1500" data-group="1">Compétences en développement Mobile</label>
+        <div class="skill-bar compact" data-value="80%" data-animate="fadeInRight" data-delay="1800" data-group="1">
+          <div class="bar">
+            <div class="fill">
+              <div class="value">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <label data-animate="fadeInRight" data-delay="1500" data-group="1">Compétences en design et graphisme</label>
+        <div class="skill-bar compact" data-value="70%" data-animate="fadeInRight" data-delay="1800" data-group="1">
+          <div class="bar">
+            <div class="fill">
+              <div class="value">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 padding-minus-bottom">
+        <div class="sub-heading" data-animate="fadeInRight" data-group="1">Qualités personnelles</div>
+        <ul class="list custom-bullets">
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Aptitudes à la résolution de problèmes.</li>
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Capacité à travailler en équipe.</li>
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Travailler en bonne entente.</li>
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Bonne capacité d'apprentissage.</li>
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Débrouilleur.</li>
+          <li data-animate="fadeInRight" data-delay="300*index" data-group="2"><span class="bullet"></span>Enthousiaste.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download my CV - parallax section -->
+  <section id="cv" class="padding-tq-top padding-minus-tq-bottom text-center" data-parallax="./assets/parallax-cv.jpg">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="container">
+        <a href="files/Iskander_Jaiem_CV.pdf" download class="button button-big" data-animate="flipInY" data-group="1"><span class="icon"><i class="fa fa-download"></i></span>Télécharger mon cv</a>
+        <div class="footer-label uppercase" data-animate="fadeInUp" data-group="1">424.01kb | Iskander_Jaiem_CV.pdf</div>
+        <a style="display:none;" href="files/oca-java8-iskander.pdf" download class="button button-big" data-animate="flipInY" data-group="1"><span class="icon"><i class="fa fa-download"></i></span>Télécharger mon cv</a>
+        <div style="display:none;" class="footer-label uppercase" data-animate="fadeInUp" data-group="1">424.02kb | oca-java8-iskander.pdf</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work and education section -->
+  <section class="padding text-center">
+    <div class="section-heading" data-animate="bounceIn">Éducation &amp; stages</div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 padding-minus-bottom">
+        <ul class="history">
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-group="2">Baccalaureat</div>
+              <div class="icon" data-animate="bounceIn" data-group="2"><i class="fa fa-book"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="300" data-group="2"> SEP 2011 &ndash; Juin 2012</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="600" data-group="2">Lycée Hammam Sousse</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+600" data-group="1">Réussi avec mention bien en section informatique. </p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-group="2">Cycle préparatoire</div>
+              <div class="icon" data-animate="bounceIn" data-group="2"><i class="fa fa-book"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="300" data-group="2">SEP 2012 &ndash; Juin 2014&nbsp;&nbsp;&nbsp;</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="600" data-group="2">ISSAT DE SOUSSE</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+600" data-group="1">Réussi avec succès au cycle préparatoire intégré (MPI). <br />Institut Supèrieur des Sciences Appliquées et de Technologie de  Sousse (ISSAT).</p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-group="2">Cycle d'ingénieur</div>
+              <div class="icon" data-animate="bounceIn" data-group="2"><i class="fa fa-book"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="300" data-group="2">SEP 2014 &nbsp;&ndash; &nbsp;&nbsp;&nbsp;Juin 2017 &nbsp;&nbsp;&nbsp;&nbsp;</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="600" data-group="2"> &nbsp; &nbsp; &nbsp;ESPRIT</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+600" data-group="1">5ème  année cycle d’ingénieur en informatique spécialité Génie Logiciel au sein de l'Ecole Supérieure Privée d'Ingénierie et de Technologies (ESPRIT). </p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-group="2">Bourse d’études</div>
+              <div class="icon" data-animate="bounceIn" data-group="2"><i class="fa fa-book"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="300" data-group="2">Juin 2017 &nbsp;&ndash; &nbsp;&nbsp;&nbsp;Aout 2017 &nbsp;&nbsp;&nbsp;&nbsp;</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="600" data-group="2"> &nbsp; &nbsp; &nbsp; Indiana University, USA</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+600" data-group="1">Admission au Global Business Institute GBI, un programme financé par le département d'Etat américain dont les disciplines couvertes comprenaient la comptabilité, l'économie, l'entrepreneuriat, les finances et le marketing. </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 padding-minus-bottom">
+        <ul class="history">
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-delay="900" data-group="2">INFOTECK</div>
+              <div class="icon" data-animate="bounceIn" data-delay="900" data-group="2"><i class="fa fa-briefcase"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="1200" data-group="2">Juin 2014 &ndash; Sep 2014</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="1500" data-group="2">Java(Swing, Java FX), XML, Sql.</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+1500" data-group="1">Application de facturation et de gestion commerciale des produits informatique pour la société de vente en gros des matériels informatique INFOTECK.</p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-delay="900" data-group="2">PROXYM-IT</div>
+              <div class="icon" data-animate="bounceIn" data-delay="900" data-group="2"><i class="fa fa-briefcase"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="1200" data-group="2">Aout 2015 &ndash; Sep 2015</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="1500" data-group="2"> Symfony, Jquery, Json.</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+1500" data-group="1">Création d’un système de gestion de contenu (CMS) avec symfony dans la société de services informatiques PROXYM-IT .</p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-delay="900" data-group="2">La banque BIAT</div>
+              <div class="icon" data-animate="bounceIn" data-delay="900" data-group="2"><i class="fa fa-briefcase"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="1200" data-group="2">Juin 2016 &ndash; Aout 2016</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="1500" data-group="2"> Java EE, Jquery, Json.</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+1500" data-group="1">Création et intégration d’une application web d’interprétation des données saisies en temps réel ou à partir d’un standard Excel pour la Banque Internationale Arabe de Tunisie.</p>
+          </li>
+          <li>
+            <div class="heading">
+              <div class="title" data-animate="fadeInRight" data-delay="900" data-group="2">La banque BIAT</div>
+              <div class="icon" data-animate="bounceIn" data-delay="900" data-group="2"><i class="fa fa-briefcase"></i></div>
+              <div class="datetime" data-animate="fadeInUp" data-delay="1200" data-group="2">Janvier 2017 &ndash; Juin 2017</div>
+              <div class="aff uppercase" data-animate="fadeInUp" data-delay="1500" data-group="2"> &nbsp; &nbsp; &nbsp;Android, Node Js.</div>
+            </div>
+            <p data-animate="flipInY" data-delay="300*index+1500" data-group="1">Projet de fin d’études: Création d’une application Android managériale pour le pilotage de la force de vente au bénéficie des directeurs des zones.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Portfolio section -->
+  <section id="portfolio" class="padding-bottom text-center">
+    <div class="section-heading" data-animate="bounceIn">Portfolio</div>
+
+
+  </section>
+  <div class="container">
+    <div class="text-center">
+      <ul class="portfolio-filter padding-normal-bottom">
+        <li class="active" data-animate="fadeInUp" data-delay="300*index" data-group="1"><a href="#" class="button button-small" data-filter="*">Toutes les applications</a></li>
+        <li data-animate="fadeInUp" data-delay="300*index" data-group="1"><a href="#" class="button button-small" data-filter=".category-web">Application Web</a></li>
+        <li data-animate="fadeInUp" data-delay="300*index" data-group="1"><a href="#" class="button button-small" data-filter=".category-desktop">Application bureautique</a></li>
+        <li data-animate="fadeInUp" data-delay="300*index" data-group="1"><a href="#" class="button button-small" data-filter=".category-mobile">Application mobile</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Trigger the modal with a button -->
+    <div hidden>
+      <button type="button" id="btnModalSymfony"class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalSymfony">Open Symfony Modal</button>
+    </div>
+    <div hidden>
+      <button type="button" id="btnModalPerfectJob"class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalPerfectJob">Open PerfectJob Modal</button>
+    </div>
+
+    <div class="portfolio padding-half-bottom" data-animate="bounceIn">
+
+      <div class="item category-mobile">
+        <img src="img/thumb/mobileoffice.png" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Android</span>
+            <span class="category">Application bancaire MobileOffice</span>
+          </a>
+        </div>
+      </div>
+	  
+      <div class="item category-web">
+        <img src="img/thumb/web4.jpg" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Java EE</span>
+            <span class="category">Generateur des données</span>
+          </a>
+        </div>
+      </div>
+
+      <div   class="item category-web">
+        <img src="./img/thumb/web3.jpg" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a target="_blank" href="http://www.hworkers.fr" class="link">
+            <span class="title">Symfony</span>
+            <span class="category">Création du site Hworkers.fr</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+      <div  onclick="myModalSymfony();" class="item category-web">
+        <img src="./assets/portfolio1.jpg" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a href="#" class="link">
+            <span class="title">Symfony</span>
+            <span class="category">Création d'un cms - CMSFONY</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+      <div  onclick="myModalPerfectJob();" class="item category-desktop">
+        <img src="./assets/portfolio2.jpg" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a href="#" class="link">
+            <span class="title">Java Desktop</span>
+            <span class="category">Application de freelance - PerfectJob</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+
+
+      <div class="item category-desktop">
+        <img src="img/thumb/infoteck1.png" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Java Swing</span>
+            <span class="category">Application de facturation - Infoteck</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+
+      <div class="item category-web">
+        <img src="img/thumb/web2.png" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Symfony</span>
+            <span class="category">Gestion des locations - SVPLocation</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="item category-web">
+        <img src="img/thumb/web1.jpg" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">JAVA EE</span>
+            <span class="category">Bright Flight</span>
+          </a>
+        </div>
+      </div>
+      <div class="item category-mobile">
+        <img src="img/thumb/mobile1.png" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Java Libgdx</span>
+            <span class="category">Jeu cross-platform - Planez</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+
+
+
+      <div class="item category-desktop">
+        <img src="img/thumb/shortestPath.png" class="image" alt="" />
+        <div class="overlay">
+          <div class="tile"></div>
+          <a class="link">
+            <span class="title">Java Swing</span>
+            <span class="category">Algorithm App - Shortest Path</span>
+          </a>
+        </div>
+      </div>&nbsp;&nbsp;
+
+      <!-- PROJET EN COURS
+      <div class="item category-web">
+      <img src="./assets/portfolio3.jpg" class="image" alt="" />
+      <div class="overlay">
+      <div class="tile"></div>
+      <a href="#" class="link">
+      <span class="title">Symfony</span>
+      <span class="category">Junior Entreprise</span>
+    </a>
+  </div>
+</div>-->
+</div>
+<!--
+<div class="text-center padding-minus-bottom">
+<a href="#" class="button button-icon-left" data-animate="flipInY" onclick="loadMorePortfolioItems();"><i class="fa fa-refresh"></i>Load more</a>
+</div>-->
+<br/>
+<br/>
+</div>
+
+<!-- Contacts section -->
+<section id="contact" class="padding-bottom text-center">
+  <div class="section-heading" data-animate="bounceIn">Formulaire de contact</div>
+</section>
+<div class="container">
+  <div class="col-lg-12 col-md-12 col-sm-12 padding-minus-bottom">
+    <form id="gform" action="https://script.google.com/macros/s/AKfycbybyha7NPceHLGQFnJLGeRA03npdMk7AgOMnGxDSuEM_TI6ZZvW/exec" method="post" >
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <label for="name" data-animate="fadeInRight">Nom:</label>
+          <input type="text" id="name" name="name" data-animate="fadeInRight" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <label for="email" data-animate="fadeInRight">E-mail:</label>
+          <input type="email" id="email" name="email" data-animate="fadeInRight" />
+        </div>
+      </div>
+      <label for="message" data-animate="fadeInRight">Message:</label>
+      <textarea id="message" name="message" data-animate="fadeInRight"></textarea>
+      <button type="submit" class="button button-icon-left" data-animate="flipInY"><i class="fa fa-envelope"></i>Envoyer</button>
+    </form>
+	<div  style="display:none;" id="thankyou_message">
+ <h4 class="modal-title">Message envoyé avec succès.</h4>
+</div>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer section -->
+<footer class="padding-tq-top padding-minus-tq-bottom text-center">
+  <a href="#hero" class="top"><i class="fa fa-chevron-up"></i></a>
+  <h4 class="colored" data-animate="fadeInUp">Iskander Jaiem</h4>
+  <a target="_blank" href="https://www.github.com/iskanderjaiem" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-github"></i></a>
+  <a target="_blank" href="https://www.upwork.com/freelancers/~01eeda076f45228638" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="icon-upwork"></i></a>
+  <a target="_blank" href="https://www.linkedin.com/in/iskander-jaiem-2a83aab1" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-linkedin"></i></a>
+  <a target="_blank" href="https://www.facebook.com/jaiemiskander" class="button button-icon" data-animate="fadeInUp" data-delay="300*index" data-group="1"><i class="fa fa-facebook"></i></a>
+  <div class="copyright colored" data-animate="fadeInUp" data-delay="300*index-300" data-group="1"> Created with <i class="fa fa-heart"></i> by <a href="http://iskanderjaiem.github.io" target="_blank" class="colored">Iskander Jaiem</a><br/>&copy; 2016</div>
+</footer>
+
+<!-- Content MODALS -->
+
+<!-- CMSFONY -->
+<div class="modal fade" id="myModalSymfony" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content modal-lg">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">CMSFony - Un CMS développé en Symfony!</h4>
+      </div>
+      <div class="modal-body">
+        <br/>
+        <center> <img src="img/cmsfony/logo.png" width="200em"/></center>
+        <br/><br/>
+        <p>CMSFony est un Systèm de Gestion de Contenu (SGC ou CMS en englais), il est basé sur le framework PHP "Symfony".<br/>
+          Ce projet open source a été développé en 2014 par Jaiem Iskander et téléchargeable à partir de <a href="https://github.com/iskanderjaiem/CMSFony">ce lien github</a>.</p>
+          <center> <a target="_blank"  href="https://github.com/iskanderjaiem/CMSFony"><img src="img/plus.png" width="200em"/></a></center>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- PERFECTJOB -->
+  <div class="modal fade" id="myModalPerfectJob" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content modal-lg">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">PerfectJob - Une application Java pour le travail en ligne</h4>
+        </div>
+        <div class="modal-body"><br/>
+          <p>Perfect Job est une plateforme de travail en ligne avec des espaces pour les Freelancers, Jobowners et Administrateurs.<br/>
+            Ci-dessous deux vidéos de démonstration et de promotion:</p>
+            <ul class="nav nav-pills">
+              <li class="active"><a data-toggle="pill" href="#menu1">Démonstration</a></li>
+              <li><a data-toggle="pill" href="#menu2">Promotion</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="menu1" class="tab-pane fade in active">
+                <center>
+                  <video width="100%" controls>
+                    <source src="vid/perfectJob/desktop.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </center>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <center>
+                    <video width="100%" controls>
+                      <source src="vid/perfectJob/promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Hidden iframe for contact forms
+        <iframe name="hidden" class="hide" src="about:blank"></iframe> -->
+
+        <!-- JS libraries and scripts -->
+        <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.imgpreload.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.fit-element.js"></script>
+        <script type="text/javascript" src="./js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script type="text/javascript" src="./js/jquery.bez.min.js"></script>
+        <script type="text/javascript" src="./js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="./js/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="./js/retina-1.1.0.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.livequery.js"></script>
+        <script type="text/javascript" src="./js/scripts.js"></script>
+
+        <!-- Initiate scroll effects, remove if you do not want the scroll effects -->
+        <script type="text/javascript" src="./js/init-scroll.js"></script>
+
+        <!-- Replace this JavaScript with your own implementations -->
+        <script type="text/javascript">
+        // This copies the first 9 items in the portfolio and appends them to the end
+        function loadMorePortfolioItems() {
+          $('.portfolio').isotope('insert', $('.portfolio').find('.item:lt(9)').clone());
+        }
+
+        function myModalSymfony() {
+          document.getElementById("btnModalSymfony").click();
+        }
+        function myModalPerfectJob() {
+          document.getElementById("btnModalPerfectJob").click();
+        }
+        </script>
+      </script>
+
+      <!-- The contents (if there's no contents the ribbon acts as a link) -->
+      <div class="forkit-curtain">
+        <div class="close-button"></div>
+        <div class="footer-label uppercase fadeInUp animated">
+
+          <h5>Je suis disponible pour travailler à distance sur vos projets.</h5>
+
+          <h3>Si vous êtes intéressé par ma candidature,<br/> veuillez m'envoyer un e-mail sur <a href="mailto:iskander.jaiem@gmail.com">iskander.jaiem@gmail.com</a></h3>
+
+          <h5>Je m’engage à répondre à toute proposition.</h5>
+        </div>
+      </div>
+      <!-- Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42238535-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42238535-2');
+</script>
+
+      <!-- The ribbon -->
+      <a class="forkit" data-text="Disponible pour freelance" data-text-detached="Glisser vers le bas >" href="https://github.com/hakimel/forkit.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+      <script src="js/forkit.js"></script>
+		<script data-cfasync="false" type="text/javascript"
+		src="./js/form-submission-handler.js"></script>
+    </body>
+    </html>
